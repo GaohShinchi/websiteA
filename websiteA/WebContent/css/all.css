@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+
+.ad {
+	margin:0 10vw 0 10vw;
+	width: 80vw;
+	height: 300px;
+	overflow:hidden;
+	background-color: beige;
+}
+
+.ad-on{
+	width:500%;
+	position:relative;
+	left:0;
+	animation:slide 40s infinite ease;
+}
+@keyframes slide{
+	0%{
+	transform: translateX(0) rotateX(0deg);
+	}
+	20%{
+	transform: translateX(-300px);
+	}
+	40%{
+	transform: translateX(-600px);
+	}
+	60%{
+	transform: translateX(-900px);
+	}
+	80%{
+	transform: translateX(-1200px);
+	}
+	100%{
+	transform: translateX(0);
+	}
+}
+
+.ad-block{
+	margin:20px 3px 20px 3px;
+	width:300px;
+	height:250px;
+	background-color:red;
+	border:5px 5px 5px 5px solid;
+	border-color: paleturquoise;
+	position:relative;
+}
+
+.next-link{
+	width: 100vw;
+	height: 100px;
+	background-color:black;
+}
+
+
+
+#end-pic {
+	animation-name:end-pic;
+	animation-duration:3s;
+	animation-timing-function:cubic-bezier(1.0,0.1,0.1,0.1.0);
+	animation-delay:1s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+
+@keyframes end-pic{
+	0%{
+		transform : rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+	50%{
+		transform : rotateX(5deg) rotateY(0deg) rotateZ(-3deg);
+	}
+	100% {
+		transform : rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+	}
+}
+
+.title-pic{
+
+}
+.title-pic :hover{
+	background-color:yellow;
+
+}
+.title-rog {
+width:400px;
+	position: absolute;
+	z-index:0;
+}
+.title-rog :hover{
+
+}
+.title-rogg{
+	position: absolute;
+	width: 370px;
+	z-index:1;
+	pointer-events: none;
+}
+
+.title-rogg :hover{
+
+}
